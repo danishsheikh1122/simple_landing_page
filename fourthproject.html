@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="banner">
+        <nav>
+            <h1>
+                !Nterior
+            </h1>
+            <ul>
+                <a href="#">
+                    <li class="items1">HOME</li>
+                </a>
+                <a href="#">
+                    <li class="items2">BEDROOM</li>
+
+                </a>
+                <a href="#">
+                    <li class="items3">DINING</li>
+
+                </a>
+                <a href="#">
+                    <li class="items4">KITCHEN</li>
+
+                </a>
+                <a href="#">
+
+                    <li class="items5">BACKYARD</li>
+                </a>
+            </ul>
+        </nav>
+        <main class="hero">
+            <div class="container">
+
+                <h1>design your home </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore necessitatibus suscipit
+                    quisquam facilis a quia atque nulla doloremque ex quod.</p>
+                <div class="hero_btn">
+                    <button type="button" value="WATCH MORE" title="watch_more"><span></span>WATCH MORE</button>
+                    <button type="button" value="SUBSCRIBE" title="subscribe"><span></span>SUBSCRIBE</button>
+                </div>
+            </div>
+        </main>
+        <style>
+            .container {
+                margin-top: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .container h1 {
+                text-transform: uppercase;
+                height: 5rem;
+                font-size: 4rem;
+            }
+
+            .container p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 4rem;
+                width: 50%;
+                text-align: center;
+                font-size: 1.2rem;
+
+            }
+
+            .hero_btn {
+                margin-top: 2rem;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            button {
+                width: 100%;
+                height: 3rem;
+                margin: 5px;
+                background: transparent;
+                border: 2px solid #6bffe4;
+                border-radius: 3rem;
+                color:#fff;
+                font-size: 1.2rem;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                z-index: 1;
+            }
+            
+            span {
+                z-index: -1;
+                background: #6bffe4;
+                width: 0;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 3rem;
+                transition: 0.5s;
+
+            }
+            button:hover span{
+                width: 100%;
+            }
+            button:hover{
+                color: black;
+            }
+           
+
+
+            
+        </style>
+    </div>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    nav {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    nav h1 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+
+    }
+
+    nav ul a {
+        position: relative;
+        text-decoration: none;
+    }
+
+    nav ul a:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        height: 6px;
+        width: 0;
+        background-color: #6bffe4;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+
+    }
+
+    nav ul a:hover:before {
+        width: 100%;
+    }
+
+    .banner {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("fourth_html_backgroundimg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+</html>
